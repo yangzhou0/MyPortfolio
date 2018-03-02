@@ -19,4 +19,4 @@
 .byebug_history
 
 #Don't show my secrets:
-/config/locales/secrets.yml
+/config/secrets.yml
