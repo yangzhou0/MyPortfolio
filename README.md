@@ -13,6 +13,6 @@ def my_function
 end
 ```
 
->this is my local repo change
+>this is my local repo change 
 
-> This is a quote that will generate a commit conflict with my local repo when I pull it.
+> This is a quote that will generate a commit conflict with my local repo when I pull it(2nd time)
