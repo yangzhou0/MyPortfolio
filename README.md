@@ -15,10 +15,7 @@ end
 
 >this is my local repo change
 
-<<<<<<< HEAD
+
 > hi (4th time)
 
 >commit from local repo
-=======
-
->>>>>>> 6c4bad2... delete 'hi' from readme
