@@ -15,4 +15,4 @@ end
 
 >this is my local repo change 
 
-> This is a quote that will generate a commit conflict(2nd time) with my local repo when I pull it
+> This a quote that will generate a commit conflict(3nd time) with my local repo when I pull it
