@@ -16,6 +16,7 @@ end
 >this is my local repo change
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > hi (4th time)
 
 >commit from local repo
@@ -25,3 +26,6 @@ end
 >>>>>>> 6c4bad2... delete 'hi' from readme
 =======
 >>>>>>> 360c47e... change made from local repo, simple addition, assume no conflict
+=======
+
+>>>>>>> 6c4bad2... delete 'hi' from readme
