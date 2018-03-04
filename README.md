@@ -14,12 +14,17 @@ end
 ```
 
 >this is my local repo change
+<<<<<<< HEAD
+=======
+
+>>>>>>> 87fbdcccc44fde19823eb6e943f6093d1ae92ea9
 
 <<<<<<< HEAD
 <<<<<<< HEAD
 > hi (4th time)
 
 >commit from local repo
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -29,3 +34,5 @@ end
 =======
 
 >>>>>>> 6c4bad2... delete 'hi' from readme
+=======
+>>>>>>> 87fbdcccc44fde19823eb6e943f6093d1ae92ea9
