@@ -1,0 +1,10 @@
+<h1>Portfolio Items</h1>
+<% @portfolios.each do |item| %>
+<p><%=link_to item.title, portfolio_show_url(item) %></p>
+<p><%= item.subtitle %></p>
+<p><%= item.body %></p>
+<%= link_to "edit", edit_portfolio_url(item) %>
+<%= button_to 'Delete', item, method: :delete, data:{ confirm: "Are you sure?"}%>
+<%= image_tag item.thumb_image unless item.thumb_image.nil? %>
+
+<% end %>
