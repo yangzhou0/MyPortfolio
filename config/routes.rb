@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :portfolios, except: [:show]
   get 'portfolio/:id', to: 'portfolios#show', as: "portfolio_show"
-
+  get 'react_items', to: 'portfolios#react'
   resources :blogs do
     member do
       post 'toggle_status'

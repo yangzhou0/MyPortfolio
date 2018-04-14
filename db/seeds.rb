@@ -7,20 +7,38 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+3.times do |topic|
+  Topic.create!(title: "Topic #{topic}")
+end
+
 10.times do |blog|
   Blog.create!(
     title: "blog title #{blog}",
-    body: "blog body #{blog}"
+    body: "blog body #{blog}",
+    topic_id: Topic.last.id
+
   )
 end
 
 9.times do |item|
   Portfolio.create!(
     title: "title #{item}",
-    subtitle: "subtitle #{item}",
+    subtitle: "Ruby on rails",
     body: "body #{item}",
     main_image: "http://via.placeholder.com/350x150",
     thumb_image: "http://via.placeholder.com/350x150"
+
+  )
+end
+
+1.times do |item|
+  Portfolio.create!(
+    title: "title #{item}",
+    subtitle: "React",
+    body: "body #{item}",
+    main_image: "http://via.placeholder.com/350x150",
+    thumb_image: "http://via.placeholder.com/350x150"
+
   )
 end
 
