@@ -9,4 +9,14 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def missing
+
+  end
+
+  def args
+    @first = params[:firstArg]
+    @second = params[:secondArg]
+
+  end
 end

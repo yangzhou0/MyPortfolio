@@ -11,4 +11,9 @@ Rails.application.routes.draw do
       post 'toggle_status'
     end
   end
+
+  get 'query/:firstArg/:secondArg', to: 'pages#args'
+  get 'query/:firstArg/', to: 'pages#args'
+  get '*missing', to: 'pages#missing'
+
 end
