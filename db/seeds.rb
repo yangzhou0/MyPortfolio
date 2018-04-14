@@ -48,3 +48,7 @@ end
     percent_utilized: "#{skill*10}"
   )
 end
+
+3.times do |tech|
+  Portfolio.last.technologies.create!(name:"Technology #{tech}")
+end
