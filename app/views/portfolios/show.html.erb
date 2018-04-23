@@ -1,4 +1,9 @@
 <h1> <%= @portfolio_item.title %></h1>
 <%= image_tag @portfolio_item.main_image unless @portfolio_item.main_image.nil? %>
 
-<%= link_to 'All', portfolios_url %>
+<h2>Technologies</h2>
+<% @portfolio_item.technologies.each do |tech| %>
+  <%= tech.name %>
+<% end %>
+<br>
+<%= link_to 'All Portfolios', portfolios_url %>
