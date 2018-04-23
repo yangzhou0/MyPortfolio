@@ -17,7 +17,9 @@ class Portfolio < ApplicationRecord
   after_initialize :set_default_image
 
   has_many :technologies
-  
+
+  #automatically assign newly created technology to be nested in
+  #its Portfolio. 
   accepts_nested_attributes_for :technologies,
     reject_if: lambda{|attr| attr['name'].blank?}
 
