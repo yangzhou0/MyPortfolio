@@ -3,6 +3,10 @@ class Portfolio < ApplicationRecord
   after_initialize :set_default_image
 
   has_many :technologies
+  
+  accepts_nested_attributes_for :technologies,
+    reject_if: lambda{|attr| attr['name'].blank?}
+
   def self.react
     Portfolio.where(subtitle: 'React')
   end
